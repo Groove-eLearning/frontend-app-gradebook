@@ -9,6 +9,8 @@ config.resolve.modules = [
 ];
 
 config.module.rules[0].exclude = /node_modules\/(?!(query-string|split-on-first|strict-uri-encode|@edx))/;
+
 config.devServer.allowedHosts = ['all'];
+config.devServer.disableHostCheck = true;
 
 module.exports = config;
